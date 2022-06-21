@@ -19,6 +19,9 @@ const server = net.createServer(socket => {
     } )
 });
 
+server.listen(1235);
+
+
 function sendOut (message, socketSent) {
 
     if (message.toString() === "quit") {
@@ -38,4 +41,3 @@ function sendOut (message, socketSent) {
     }
 }
 
-server.listen(3000);
